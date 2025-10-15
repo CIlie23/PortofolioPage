@@ -1,61 +1,41 @@
 @font-face {
-    font-family: 'osd';
-    src: url(VCR_OSD_MONO_1.001.ttf);
+  font-family: 'jbm';
+  src: url('Qdbettercomicsansalternates-z8823.ttf');
 }
 
 body {
   display: flex;
-  flex-direction: column; /* Stack the children vertically */
-  justify-content: center; /* Center content vertically */
-  align-items: center; /* Center content horizontally */
-  min-height: 100vh; /* Ensure the body takes at least the full viewport height */
-  margin: 0; /* Remove default body margin */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  font-family: 'jbm', monospace;
+  text-align: center;
 }
 
-h1{
-    font-family: 'osd';
-    text-align: center;
+h1, .titles, .socialmedia, .placeholder, .justText, .articleTitle {
+  font-family: inherit;
 }
 
-
-.titles{
-    text-align: center;
+a {
+  text-decoration: none;
 }
 
-
-.socialmedia{
-    font-family: 'osd';
-    text-align: center;
-
+.articleTitle {
+  font-size: medium;
 }
 
-div{
-    text-align: center;
+.articleImages {
+  display: block;
+  margin: 0 auto;
+  width: 50%;
 }
 
-.placeholder{
-    font-family: 'osd';
-    text-align: center;
+.socialmedia {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* adjust as needed */
 }
 
-a{
-    text-decoration: none;
-}
-
-.justText{
-    font-family: 'osd';
-}
-
-.articleTitle{
-    font-family: 'osd';
-    font-size: medium;
-}
-
-.articleImages{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-
-}
 
